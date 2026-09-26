@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/sbin/runuser -u lstdata -- /opt/lst-pilot/.venv/bin/python /opt/lst-pilot/deploy/cds_login.py "$@"

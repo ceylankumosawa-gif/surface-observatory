@@ -1,0 +1,37 @@
+{
+    auto_https disable_redirects
+}
+
+http://degenerate.energy, https://degenerate.energy {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        X-Frame-Options DENY
+    }
+
+    @global path /api/global /api/global/*
+    handle @global {
+        request_body {
+            max_size 64KB
+        }
+        reverse_proxy 127.0.0.1:8001
+    }
+
+    @api path /api /api/*
+    handle @api {
+        request_body {
+            max_size 64KB
+        }
+        reverse_proxy 127.0.0.1:8000
+    }
+
+    handle {
+        root * /var/www/lst
+        route {
+            try_files {path} /index.html
+            header /index.html Cache-Control "public, max-age=0, must-revalidate"
+            file_server
+        }
+    }
+}

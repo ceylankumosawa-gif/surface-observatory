@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lst-pilot"
+version = "0.1.0"
+description = "Surface Observatory: climate-aware land surface temperature research and mapping"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2", "pandas>=2.2", "pyarrow>=18", "scikit-learn>=1.6",
+  "joblib>=1.4", "requests>=2.32", "pyproj>=3.7", "shapely>=2",
+  "rasterio>=1.4.4", "planetary-computer>=1", "pystac-client>=0.8",
+  "xarray>=2025.1", "zarr>=2.18,<3", "gcsfs>=2025.1",
+  "pvlib>=0.11", "matplotlib>=3.9", "pytest>=8"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+web = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.28,<1", "timezonefinder==8.2.4"]
+frozen-model = ["scikit-learn==1.9.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

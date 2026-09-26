@@ -1,0 +1,102 @@
+.global-research-evidence { margin: 48px 0 56px; padding: 32px 0 38px; border-top: 1px solid #41505c; border-bottom: 1px solid #41505c; color: #e1ebef; }
+.global-research-evidence .gre-heading { display: flex; align-items: center; gap: 10px; color: #8ce0d7; }
+.global-research-evidence .gre-kicker { font-size: 10px; letter-spacing: 1.8px; line-height: 1.6; font-weight: 650; }
+.global-research-evidence h2 { margin: 13px 0 22px; font-size: clamp(26px, 4vw, 36px); letter-spacing: -1px; }
+.global-research-evidence h3 { font-size: 18px; letter-spacing: -.35px; line-height: 1.4; font-weight: 550; }
+.global-research-evidence p { margin: 8px 0 0; color: #afbdc7; font-size: 13px; line-height: 1.7; }
+.global-research-evidence .gre-disclosure { display: flex; flex-direction: column; gap: 7px; padding: 17px 19px; border-left: 2px solid #ffb56e; background: #211f20; font-size: 13px; line-height: 1.65; }
+.global-research-evidence .gre-disclosure strong { color: #ffd0a5; font-weight: 550; }
+.global-research-evidence .gre-disclosure span { color: #c5bbb3; }
+.global-research-evidence .gre-section-heading { display: flex; align-items: start; justify-content: space-between; gap: 20px; margin: 28px 0 24px; }
+.global-research-evidence .gre-section-heading p { font-size: 11px; }
+.global-research-evidence .gre-status { flex-shrink: 0; max-width: 240px; border: 1px solid #53606b; padding: 7px 10px; color: #c7d3da; font-size: 10px; line-height: 1.5; border-radius: 4px; }
+.global-research-evidence .gre-charts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.global-research-evidence .gre-chart { margin: 0; min-width: 0; }
+.global-research-evidence .gre-chart figcaption { min-height: 47px; }
+.global-research-evidence .gre-chart figcaption strong { font-size: 12px; font-weight: 550; }
+.global-research-evidence .gre-chart figcaption span { display: block; color: #92a6b4; font-size: 10px; margin-top: 6px; }
+.global-research-evidence .gre-chart-axis { display: flex; justify-content: space-between; font-size: 10px; color: #8195a4; margin: 8px 0 19px; border-bottom: 1px solid #34424d; padding-bottom: 5px; font-variant-numeric: tabular-nums; }
+.global-research-evidence .gre-chart-body { position: relative; }
+.global-research-evidence .gre-target { position: absolute; top: -8px; bottom: 0; border-left: 1px dashed #b19b7b; z-index: 1; pointer-events: none; }
+.global-research-evidence .gre-target > span { position: absolute; top: -12px; left: 5px; color: #d0b590; font-size: 9px; white-space: nowrap; }
+.global-research-evidence .gre-bar-row { position: relative; padding: 10px 0 11px; }
+.global-research-evidence .gre-bar-label { display: flex; align-items: end; justify-content: space-between; gap: 8px; margin-bottom: 7px; position: relative; z-index: 2; font-size: 10px; line-height: 1.4; }
+.global-research-evidence .gre-bar-label span { background: #101a25; padding-right: 3px; }
+.global-research-evidence .gre-bar-label strong { flex-shrink: 0; font-weight: 500; font-variant-numeric: tabular-nums; background: #101a25; padding-left: 3px; }
+.global-research-evidence .gre-bar-track { height: 7px; border-radius: 1px; background: #1b2833; overflow: hidden; }
+.global-research-evidence .gre-bar { height: 100%; border-radius: 1px; background: #81c7c3; }
+.global-research-evidence .gre-series-0 { background: #d7e2e9; }
+.global-research-evidence .gre-series-1 { background: #88bcb7; }
+.global-research-evidence .gre-series-2 { background: #9baec9; }
+.global-research-evidence .gre-series-3 { background: #c2b493; }
+.global-research-evidence .gre-series-4 { background: #b69ec4; }
+.global-research-evidence .gre-series-5 { background: #d6a991; }
+.global-research-evidence .gre-footnote { font-size: 11px; color: #8fA3b2; margin: 18px 0 0; }
+.global-research-evidence .gre-scope { padding: 14px 0 18px; }
+.global-research-evidence .gre-receipts { border-top: 1px solid #2a3945; border-bottom: 1px solid #2a3945; padding: 14px 0; }
+.global-research-evidence summary { cursor: pointer; font-size: 12px; color: #b4d9d6; }
+.global-research-evidence .gre-disclosure-chevron { flex-shrink: 0; }
+.global-research-evidence details[open] > summary > .gre-disclosure-chevron { transform: rotate(90deg); }
+.global-research-evidence .gre-receipts > div { padding: 18px 0; border-bottom: 1px solid #24323c; }
+.global-research-evidence .gre-receipts > div:last-child { border-bottom: 0; }
+.global-research-evidence .gre-receipts strong { font-size: 13px; }
+.global-research-evidence .gre-receipts dl { margin: 12px 0 0; font-size: 10px; }
+.global-research-evidence .gre-receipts dt { color: #8d9faa; margin-top: 6px; }
+.global-research-evidence .gre-receipts dd { margin: 4px 0 0; font-family: ui-monospace, monospace; color: #aebfc8; overflow-wrap: anywhere; }
+.global-research-evidence .gre-download { display: inline-flex; align-items: center; gap: 6px; color: #8cd5ce; font-size: 11px; margin: 12px 0 0; text-decoration: underline; text-underline-offset: 3px; }
+.global-research-evidence .gre-detail-heading { margin: 30px 0 16px; }
+.global-research-evidence .gre-controls { display: flex; align-items: end; gap: 14px; flex-wrap: wrap; }
+.global-research-evidence .gre-controls > label { display: flex; flex-direction: column; gap: 7px; color: #9caeb9; font-size: 11px; min-width: 180px; flex: 1; }
+.global-research-evidence select { width: 100%; color: #d8e4e9; background: #111e2a; border: 1px solid #3b4d5a; padding: 9px 28px 9px 10px; border-radius: 4px; font-size: 12px; }
+.global-research-evidence .gre-phase { display: flex; border: 1px solid #3b4d5a; border-radius: 4px; overflow: hidden; }
+.global-research-evidence .gre-phase button { padding: 10px 11px; font-size: 11px; color: #a7bac5; }
+.global-research-evidence .gre-phase button[aria-pressed="true"] { color: #b7f3eb; background: #20413f; }
+.global-research-evidence .gre-reset { display: inline-flex; align-items: center; gap: 5px; padding: 10px 0; color: #a7bac5; font-size: 11px; }
+.global-research-evidence .gre-row-status { font-size: 10px; margin: 12px 0; color: #96aab7; }
+.global-research-evidence .gre-table-wrap { overflow-x: auto; max-width: 100%; scrollbar-width: thin; border-top: 1px solid #3c4a54; border-bottom: 1px solid #3c4a54; }
+.global-research-evidence table { border-collapse: collapse; width: 100%; text-align: right; font-size: 11px; font-variant-numeric: tabular-nums; }
+.global-research-evidence caption { text-align: left; color: #9dafba; font-size: 10px; padding: 13px 10px; line-height: 1.5; }
+.global-research-evidence thead th { font-size: 10px; font-weight: 500; color: #a8b9c4; line-height: 1.5; padding: 11px 10px; border-bottom: 1px solid #3c4a54; min-width: 86px; }
+.global-research-evidence th:first-child { text-align: left; min-width: 176px; }
+.global-research-evidence tbody th { font-weight: 500; padding: 13px 10px; border-bottom: 1px solid #253440; line-height: 1.5; }
+.global-research-evidence td { padding: 13px 10px; border-bottom: 1px solid #253440; white-space: nowrap; }
+.global-research-evidence small { display: block; color: #8b9fad; font-size: 9px; font-weight: 400; margin-top: 4px; }
+.global-research-evidence .gre-missing { color: #879ba9; background: #101b25; }
+.global-research-evidence .gre-expansion { margin-top: 34px; padding: 25px 22px; background: #121f2b; border: 1px solid #304651; border-radius: 5px; }
+.global-research-evidence .gre-expansion .gre-section-heading { margin: 0 0 15px; }
+.global-research-evidence .gre-expansion h3 { margin-top: 7px; font-size: 22px; }
+.global-research-evidence .gre-coverage { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 23px 0 0; }
+.global-research-evidence .gre-coverage dt { color: #9eb3c0; font-size: 10px; line-height: 1.5; }
+.global-research-evidence .gre-coverage dd { margin: 7px 0 0; font-size: 23px; font-weight: 400; letter-spacing: -.4px; font-variant-numeric: tabular-nums; }
+.global-research-evidence .gre-waiting { padding: 14px 0 0; margin-top: 18px; border-top: 1px solid #334551; color: #a2b8c4; font-size: 12px; line-height: 1.6; }
+.global-research-evidence .gre-expansion-regions { margin-top: 19px; }
+.global-research-evidence .gre-expansion-regions summary { margin-bottom: 16px; line-height: 1.6; }
+.global-research-evidence .gre-loading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 20px; background: #14212c; font-size: 13px; line-height: 1.6; color: #a9bdc8; }
+.global-research-evidence .gre-loading button { display: inline-flex; align-items: center; gap: 7px; color: #8de0d6; font-size: 12px; }
+.global-research-evidence .gre-updated { font-size: 10px; color: #7e949f; margin: 20px 0 0; overflow-wrap: anywhere; }
+.global-research-evidence .gre-solar { border-color: #5a5142; }
+.global-research-evidence .gre-solar-charts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.global-research-evidence .gre-solar-legend { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 24px 0; font-size: 11px; color: #ccd9df; }
+.global-research-evidence .gre-solar-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.global-research-evidence .gre-solar-legend i { display: inline-block; width: 18px; height: 5px; }
+.global-research-evidence .gre-solar-baseline { background: #a6becb; }
+.global-research-evidence .gre-solar-candidate { background: #e7b77b; }
+.global-research-evidence .gre-solar-pair { padding: 15px 0 12px; }
+.global-research-evidence .gre-solar-population { position: relative; z-index: 2; background: #121f2b; padding-right: 3px; font-size: 11px; font-weight: 500; }
+.global-research-evidence .gre-solar .gre-bar-row { padding: 10px 0 5px; }
+.global-research-evidence .gre-solar .gre-bar-label span, .global-research-evidence .gre-solar .gre-bar-label strong { background: #121f2b; }
+.global-research-evidence .gre-solar-downloads { display: flex; flex-wrap: wrap; gap: 0 24px; }
+.global-research-evidence .gre-solar-receipt { margin-top: 22px; }
+@media (max-width: 760px) {
+  .global-research-evidence .gre-charts { grid-template-columns: 1fr; gap: 28px; }
+  .global-research-evidence .gre-solar-charts { grid-template-columns: 1fr; gap: 28px; }
+  .global-research-evidence .gre-chart figcaption { min-height: 0; }
+  .global-research-evidence .gre-chart figcaption strong { font-size: 14px; }
+  .global-research-evidence .gre-chart figcaption span { display: inline; margin-left: 10px; }
+  .global-research-evidence .gre-bar-row { padding: 7px 0 9px; }
+  .global-research-evidence .gre-bar-label { font-size: 11px; }
+  .global-research-evidence .gre-section-heading { flex-direction: column; gap: 12px; }
+  .global-research-evidence .gre-status { max-width: none; }
+  .global-research-evidence .gre-coverage { grid-template-columns: repeat(2, 1fr); gap: 21px; }
+  .global-research-evidence .gre-expansion { padding: 20px 16px; }
+}

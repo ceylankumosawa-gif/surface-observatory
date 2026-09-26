@@ -1,0 +1,3 @@
+#!/bin/sh
+# Install root-owned; the data user's token is inaccessible to the website.
+exec /usr/sbin/runuser -u lstdata -- /opt/lst-pilot/.venv/bin/python -I /usr/local/libexec/lst-appeears-login.py "$@"

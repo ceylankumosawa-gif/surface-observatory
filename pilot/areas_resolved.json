@@ -1,0 +1,358 @@
+{
+  "version": "2026-09-07",
+  "status": "selected_for_data_audit_not_yet_validated",
+  "resolution_m": 100,
+  "time_step": "hourly UTC; local solar geometry derived per pixel",
+  "scope": "land surfaces; ocean excluded; inland water flagged separately",
+  "processing_chunk_pixels": 256,
+  "climate_label_status": "Selection rationales only; sample actual Koppen classes and confidence from the 1991-2020 raster before training.",
+  "london_boundary_source": "https://gis.london.gov.uk/arcgis/rest/services/apps/webmap_context_layer/MapServer/3",
+  "london_source_extent_epsg27700": [
+    503568.2,
+    155850.8,
+    561957.5,
+    200933.9
+  ],
+  "areas": [
+    {
+      "id": "greater_london",
+      "name": "Greater London and rural fringe",
+      "center_lonlat": [
+        -0.085,
+        51.49
+      ],
+      "epsg": 27700,
+      "width_km": 80,
+      "fixed_extent_m": [
+        492800,
+        138400,
+        572800,
+        218400
+      ],
+      "wave": 1,
+      "role": "Required urban flagship; oceanic climate; urban-to-rural contrast and detailed shade experiment",
+      "extent_m": [
+        492800,
+        138400,
+        572800,
+        218400
+      ],
+      "grid_shape": [
+        800,
+        800
+      ],
+      "pixels_before_mask": 640000,
+      "resolved_center_lonlat": [
+        -0.08863706317598806,
+        51.48896211171799
+      ]
+    },
+    {
+      "id": "cabauw",
+      "name": "Cabauw and central Netherlands",
+      "center_lonlat": [
+        4.928,
+        51.968
+      ],
+      "epsg": 32631,
+      "width_km": 50,
+      "wave": 1,
+      "role": "Oceanic lowlands; pasture, wet soils, agriculture, towns; candidate radiation reference",
+      "extent_m": [
+        607400,
+        5734200,
+        657400,
+        5784200
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        4.927308639939857,
+        51.96769993042089
+      ]
+    },
+    {
+      "id": "darwin_howard_springs",
+      "name": "Darwin and Howard Springs",
+      "center_lonlat": [
+        131.01,
+        -12.46
+      ],
+      "epsg": 32752,
+      "width_km": 60,
+      "wave": 1,
+      "role": "Tropical wet/dry seasons; savanna and development; OzFlux candidate",
+      "extent_m": [
+        688500,
+        8591800,
+        748500,
+        8651800
+      ],
+      "grid_shape": [
+        600,
+        600
+      ],
+      "pixels_before_mask": 360000,
+      "resolved_center_lonlat": [
+        131.01027558462238,
+        -12.459569266573682
+      ]
+    },
+    {
+      "id": "gobabeb",
+      "name": "Gobabeb and Namib gravel plains",
+      "center_lonlat": [
+        15.055,
+        -23.55
+      ],
+      "epsg": 32733,
+      "width_km": 50,
+      "wave": 1,
+      "role": "Arid desert; gravel, dunes, fog; independent LST reference candidate",
+      "extent_m": [
+        480600,
+        7370600,
+        530600,
+        7420600
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        15.054868780307594,
+        -23.54992952312626
+      ]
+    },
+    {
+      "id": "boulder",
+      "name": "Boulder and Table Mountain",
+      "center_lonlat": [
+        -105.24,
+        40.1
+      ],
+      "epsg": 32613,
+      "width_km": 50,
+      "wave": 1,
+      "role": "Dry foothills, grassland, development and snow; SURFRAD reference candidate",
+      "extent_m": [
+        454500,
+        4413900,
+        504500,
+        4463900
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        -105.24051176532757,
+        40.10014369184555
+      ]
+    },
+    {
+      "id": "sioux_falls",
+      "name": "Sioux Falls and agricultural surroundings",
+      "center_lonlat": [
+        -96.73,
+        43.68
+      ],
+      "epsg": 32614,
+      "width_km": 50,
+      "wave": 1,
+      "role": "Continental seasons; crops, grassland and snow; SURFRAD reference candidate",
+      "extent_m": [
+        658000,
+        4813800,
+        708000,
+        4863800
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        -96.7296752825155,
+        43.67966873961838
+      ]
+    },
+    {
+      "id": "sodankyla",
+      "name": "Sodankyla",
+      "center_lonlat": [
+        26.64,
+        67.36
+      ],
+      "epsg": 32635,
+      "width_km": 50,
+      "wave": 1,
+      "role": "Boreal forest, wetland, seasonal snow and daylight contrast",
+      "extent_m": [
+        459500,
+        7446600,
+        509500,
+        7496600
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        26.63916508564492,
+        67.3603780198533
+      ]
+    },
+    {
+      "id": "utqiagvik",
+      "name": "Utqiagvik / Barrow",
+      "center_lonlat": [
+        -156.61,
+        71.25
+      ],
+      "epsg": 32604,
+      "width_km": 50,
+      "wave": 1,
+      "role": "Polar tundra, thaw and frozen soils, polar day and night; radiation reference candidate",
+      "extent_m": [
+        560700,
+        7882000,
+        610700,
+        7932000
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        -156.6106363561034,
+        71.25025109405293
+      ]
+    },
+    {
+      "id": "singapore_johor",
+      "name": "Singapore and southern Johor",
+      "center_lonlat": [
+        103.83,
+        1.39
+      ],
+      "epsg": 32648,
+      "width_km": 50,
+      "wave": 2,
+      "role": "Wet equatorial urban/forest contrast; frequent cloud; reference access unverified",
+      "extent_m": [
+        344800,
+        128700,
+        394800,
+        178700
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        103.8296650736977,
+        1.3902774510542286
+      ]
+    },
+    {
+      "id": "manaus_zf2",
+      "name": "Manaus-ZF2 rainforest",
+      "center_lonlat": [
+        -60.21,
+        -2.61
+      ],
+      "epsg": 32720,
+      "width_km": 50,
+      "wave": 2,
+      "role": "Wet tropical closed forest; AmeriFlux candidate; this box targets the forest site, not the city centre",
+      "extent_m": [
+        785300,
+        9686200,
+        835300,
+        9736200
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        -60.20964293197983,
+        -2.609731546976512
+      ]
+    },
+    {
+      "id": "cape_town",
+      "name": "Cape Town and Stellenbosch fringe",
+      "center_lonlat": [
+        18.67,
+        -33.96
+      ],
+      "epsg": 32734,
+      "width_km": 50,
+      "wave": 2,
+      "role": "Mediterranean seasons in the southern hemisphere; farming, fynbos, urban and relief",
+      "extent_m": [
+        259700,
+        6214800,
+        309700,
+        6264800
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        18.669924181899805,
+        -33.96029554985266
+      ]
+    },
+    {
+      "id": "lhasa",
+      "name": "Lhasa valley and adjacent high terrain",
+      "center_lonlat": [
+        91.12,
+        29.65
+      ],
+      "epsg": 32646,
+      "width_km": 50,
+      "wave": 2,
+      "role": "High plateau and valley stress test; strong radiation; independent reference access unresolved",
+      "extent_m": [
+        293000,
+        3256500,
+        343000,
+        3306500
+      ],
+      "grid_shape": [
+        500,
+        500
+      ],
+      "pixels_before_mask": 250000,
+      "resolved_center_lonlat": [
+        91.11970072408307,
+        29.650169162081692
+      ]
+    }
+  ],
+  "summary": {
+    "areas": 12,
+    "pixels_before_mask": 3500000,
+    "area_km2_before_mask": 35000.0,
+    "float32_temperature_bytes_per_hour": 14000000,
+    "float32_temperature_GB_per_365_day_year": 122.64,
+    "london_boroughs_verified": 33,
+    "london_official_extent_plus_10km_contained": true,
+    "geometry_note": "Local projected grids at 100 m. WGS84 GeoJSON is for display; projected extents define cells. London display boundary simplified to 50 m; containment also verified against full source extent."
+  }
+}

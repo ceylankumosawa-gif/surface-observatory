@@ -1,0 +1,25 @@
+{
+  "version": "2026-09-07",
+  "status": "selected_for_data_audit_not_yet_validated",
+  "resolution_m": 100,
+  "time_step": "hourly UTC; local solar geometry derived per pixel",
+  "scope": "land surfaces; ocean excluded; inland water flagged separately",
+  "processing_chunk_pixels": 256,
+  "climate_label_status": "Selection rationales only; sample actual Koppen classes and confidence from the 1991-2020 raster before training.",
+  "london_boundary_source": "https://gis.london.gov.uk/arcgis/rest/services/apps/webmap_context_layer/MapServer/3",
+  "london_source_extent_epsg27700": [503568.2, 155850.8, 561957.5, 200933.9],
+  "areas": [
+    {"id":"greater_london","name":"Greater London and rural fringe","center_lonlat":[-0.085,51.49],"epsg":27700,"width_km":80,"fixed_extent_m":[492800,138400,572800,218400],"wave":1,"role":"Required urban flagship; oceanic climate; urban-to-rural contrast and detailed shade experiment"},
+    {"id":"cabauw","name":"Cabauw and central Netherlands","center_lonlat":[4.928,51.968],"epsg":32631,"width_km":50,"wave":1,"role":"Oceanic lowlands; pasture, wet soils, agriculture, towns; candidate radiation reference"},
+    {"id":"darwin_howard_springs","name":"Darwin and Howard Springs","center_lonlat":[131.01,-12.46],"epsg":32752,"width_km":60,"wave":1,"role":"Tropical wet/dry seasons; savanna and development; OzFlux candidate"},
+    {"id":"gobabeb","name":"Gobabeb and Namib gravel plains","center_lonlat":[15.055,-23.55],"epsg":32733,"width_km":50,"wave":1,"role":"Arid desert; gravel, dunes, fog; independent LST reference candidate"},
+    {"id":"boulder","name":"Boulder and Table Mountain","center_lonlat":[-105.24,40.1],"epsg":32613,"width_km":50,"wave":1,"role":"Dry foothills, grassland, development and snow; SURFRAD reference candidate"},
+    {"id":"sioux_falls","name":"Sioux Falls and agricultural surroundings","center_lonlat":[-96.73,43.68],"epsg":32614,"width_km":50,"wave":1,"role":"Continental seasons; crops, grassland and snow; SURFRAD reference candidate"},
+    {"id":"sodankyla","name":"Sodankyla","center_lonlat":[26.64,67.36],"epsg":32635,"width_km":50,"wave":1,"role":"Boreal forest, wetland, seasonal snow and daylight contrast"},
+    {"id":"utqiagvik","name":"Utqiagvik / Barrow","center_lonlat":[-156.61,71.25],"epsg":32604,"width_km":50,"wave":1,"role":"Polar tundra, thaw and frozen soils, polar day and night; radiation reference candidate"},
+    {"id":"singapore_johor","name":"Singapore and southern Johor","center_lonlat":[103.83,1.39],"epsg":32648,"width_km":50,"wave":2,"role":"Wet equatorial urban/forest contrast; frequent cloud; reference access unverified"},
+    {"id":"manaus_zf2","name":"Manaus-ZF2 rainforest","center_lonlat":[-60.21,-2.61],"epsg":32720,"width_km":50,"wave":2,"role":"Wet tropical closed forest; AmeriFlux candidate; this box targets the forest site, not the city centre"},
+    {"id":"cape_town","name":"Cape Town and Stellenbosch fringe","center_lonlat":[18.67,-33.96],"epsg":32734,"width_km":50,"wave":2,"role":"Mediterranean seasons in the southern hemisphere; farming, fynbos, urban and relief"},
+    {"id":"lhasa","name":"Lhasa valley and adjacent high terrain","center_lonlat":[91.12,29.65],"epsg":32646,"width_km":50,"wave":2,"role":"High plateau and valley stress test; strong radiation; independent reference access unresolved"}
+  ]
+}

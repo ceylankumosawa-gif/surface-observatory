@@ -1,0 +1,38 @@
+[Unit]
+Description=Bounded experimental global LST API and raster worker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=lstweb
+Group=lstweb
+WorkingDirectory=/opt/lst-pilot
+Environment=OMP_NUM_THREADS=4
+Environment=OPENBLAS_NUM_THREADS=4
+Environment=MKL_NUM_THREADS=4
+Environment=NUMEXPR_MAX_THREADS=4
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=LST_ENABLE_OPERATIONAL_WEATHER=1
+Environment=LST_F_INFERENCE_BACKEND=native
+Environment=MPLCONFIGDIR=/opt/lst-pilot/runs/global_web_jobs/.matplotlib
+ExecStart=/opt/lst-pilot/.venv/bin/python -m uvicorn lst_global.api:app --host 127.0.0.1 --port 8001 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+KillMode=control-group
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/lst-pilot/runs/global_web_jobs /opt/lst-pilot/cache
+CPUQuota=400%
+MemoryHigh=6G
+MemoryMax=8G
+OOMPolicy=continue
+TasksMax=128
+
+[Install]
+WantedBy=multi-user.target
