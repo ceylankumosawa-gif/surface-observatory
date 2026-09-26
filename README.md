@@ -1,8 +1,7 @@
 # Surface Observatory
 
 An experimental land surface temperature (LST) map, with a React interface and
-a Python geospatial pipeline. Explore the deployed application at
-**[degenerate.energy](https://degenerate.energy)**.
+a Python geospatial pipeline. 
 
 The map estimates surface temperature from air temperature, weather, satellite
 surface reflectance, terrain and climate context. Surface temperature is not
