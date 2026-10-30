@@ -137,7 +137,7 @@ their own licences and attribution requirements.
 
 ## Server deployment
 
-The reference deployment runs on one existing Hetzner VM: Caddy serves static
+The reference deployment was running on one lagacy Hetzner VM: Caddy serves static
 files and routes the original pilot API to port **8000** and the isolated
 global API to port **8001**. There is no production Node server. After model,
 catalog and writable cache/job directories have been provisioned, the API
