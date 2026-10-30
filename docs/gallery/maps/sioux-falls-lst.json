@@ -1,0 +1,63 @@
+{
+ "area": "Sioux Falls and agricultural surroundings",
+ "crs": "EPSG:32614",
+ "pixel_m": 100,
+ "size_px": [
+  3840,
+  2160
+ ],
+ "extent_m": [
+  491000.0,
+  4730800.0,
+  875000.0,
+  4946800.0
+ ],
+ "primary_date": "2022-09-08",
+ "colour_scale_c": {
+  "raw": [
+   25.5,
+   46.4
+  ],
+  "balanced": [
+   25.4,
+   46.2
+  ]
+ },
+ "colormap": "inferno",
+ "no_data_colour": "#0e0e10",
+ "valid_fraction": 0.993,
+ "balancing": "balanced: each later pass shifted by its median difference vs. the mosaic in their overlap; raw: unadjusted Landsat values",
+ "passes_used": [
+  {
+   "date": "2022-09-08",
+   "added_fraction": 0.457,
+   "balance_offset_c": 0.0,
+   "scenes": [
+    "LC09_L2SP_028031_20220908_02_T1",
+    "LC09_L2SP_028030_20220908_02_T1",
+    "LC09_L2SP_028029_20220908_02_T1"
+   ]
+  },
+  {
+   "date": "2022-09-07",
+   "added_fraction": 0.334,
+   "balance_offset_c": 0.01,
+   "scenes": [
+    "LC08_L2SP_029031_20220907_02_T1",
+    "LC08_L2SP_029030_20220907_02_T1",
+    "LC08_L2SP_029029_20220907_02_T1"
+   ]
+  },
+  {
+   "date": "2022-09-06",
+   "added_fraction": 0.202,
+   "balance_offset_c": -0.19,
+   "scenes": [
+    "LC09_L2SP_030031_20220906_02_T1",
+    "LC09_L2SP_030030_20220906_02_T1",
+    "LC09_L2SP_030029_20220906_02_T1"
+   ]
+  }
+ ],
+ "passes_rejected": []
+}

@@ -14,6 +14,27 @@ regions and day/night conditions has **not** been demonstrated. See
 [Research status](docs/RESEARCH_STATUS.md) for the completed comparisons and
 remaining limitations.
 
+## Gallery
+
+<table>
+  <tr>
+    <td width="33%"><a href="docs/GALLERY.md"><img src="docs/gallery/01-london-heat-island.png" alt="London's heat island in land surface temperature, 10 July 2022" width="100%"></a></td>
+    <td width="33%"><a href="docs/GALLERY.md"><img src="docs/gallery/02-six-landscapes.png" alt="Six landscapes on one surface temperature colour scale" width="100%"></a></td>
+    <td width="33%"><a href="docs/GALLERY.md"><img src="docs/gallery/04-heldout-heatwave.png" alt="Measured versus predicted London surface temperature on a held-out heatwave day" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="33%"><a href="docs/GALLERY.md"><img src="docs/gallery/05-unobserved-day.png" alt="Predicted London surface temperature on 19 July 2022, a day with no Landsat pass" width="100%"></a></td>
+    <td width="33%"><a href="docs/GALLERY.md"><img src="docs/gallery/03-research-evidence.png" alt="Chart of error with and without 28 extra training areas" width="100%"></a></td>
+    <td width="33%"><a href="docs/GALLERY.md"><img src="docs/gallery/06-all-heldout-days.png" alt="Chart of error on seven held-out 2022 London days" width="100%"></a></td>
+  </tr>
+</table>
+
+<a href="docs/GALLERY.md"><img src="docs/gallery/maps/greater-london-lst-balanced-1920.jpg" alt="Landsat land surface temperature mosaic of Greater London and its rural fringe, 11 August 2022" width="100%"></a>
+
+See the [full gallery](docs/GALLERY.md) for captions and six 384 × 216 km
+Landsat surface temperature maps. The London model results shown there come
+from a London-only research model, not the live global model.
+
 ## What the application does
 
 - Draw a land area beyond the original twelve pilots, choose a local date and
@@ -137,7 +158,7 @@ their own licences and attribution requirements.
 
 ## Server deployment
 
-The reference deployment was running on one lagacy Hetzner VM: Caddy serves static
+The reference deployment was running on one legacy Hetzner VM: Caddy serves static
 files and routes the original pilot API to port **8000** and the isolated
 global API to port **8001**. There is no production Node server. After model,
 catalog and writable cache/job directories have been provisioned, the API

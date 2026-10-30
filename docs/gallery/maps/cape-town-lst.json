@@ -1,0 +1,76 @@
+{
+ "area": "Cape Town and Stellenbosch fringe",
+ "crs": "EPSG:32734",
+ "pixel_m": 100,
+ "size_px": [
+  3840,
+  2160
+ ],
+ "extent_m": [
+  92700.0,
+  6131800.0,
+  476700.0,
+  6347800.0
+ ],
+ "primary_date": "2023-01-20",
+ "colour_scale_c": {
+  "raw": [
+   14.2,
+   51.1
+  ],
+  "balanced": [
+   15.7,
+   51.3
+  ]
+ },
+ "colormap": "inferno",
+ "no_data_colour": "#0e0e10",
+ "valid_fraction": 0.876,
+ "balancing": "balanced: each later pass shifted by its median difference vs. the mosaic in their overlap; raw: unadjusted Landsat values",
+ "passes_used": [
+  {
+   "date": "2023-01-20",
+   "added_fraction": 0.454,
+   "balance_offset_c": 0.0,
+   "scenes": [
+    "LC09_L2SP_175084_20230120_02_T1",
+    "LC09_L2SP_175083_20230120_02_T1"
+   ]
+  },
+  {
+   "date": "2023-01-19",
+   "added_fraction": 0.114,
+   "balance_offset_c": 1.35,
+   "scenes": [
+    "LC08_L2SP_176083_20230119_02_T1"
+   ]
+  },
+  {
+   "date": "2023-01-21",
+   "added_fraction": 0.213,
+   "balance_offset_c": 0.37,
+   "scenes": [
+    "LC08_L2SP_174084_20230121_02_T1",
+    "LC08_L2SP_174083_20230121_02_T1"
+   ]
+  },
+  {
+   "date": "2023-01-13",
+   "added_fraction": 0.023,
+   "balance_offset_c": 1.96,
+   "scenes": [
+    "LC09_L2SP_174084_20230113_02_T1",
+    "LC09_L2SP_174083_20230113_02_T1"
+   ]
+  },
+  {
+   "date": "2023-01-27",
+   "added_fraction": 0.071,
+   "balance_offset_c": 2.12,
+   "scenes": [
+    "LC09_L2SP_176083_20230127_02_T1"
+   ]
+  }
+ ],
+ "passes_rejected": []
+}

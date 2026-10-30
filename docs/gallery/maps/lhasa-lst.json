@@ -1,0 +1,78 @@
+{
+ "area": "Lhasa valley and adjacent high terrain",
+ "crs": "EPSG:32646",
+ "pixel_m": 100,
+ "size_px": [
+  3840,
+  2160
+ ],
+ "extent_m": [
+  126000.0,
+  3173500.0,
+  510000.0,
+  3389500.0
+ ],
+ "primary_date": "2024-12-14",
+ "colour_scale_c": {
+  "raw": [
+   -12.0,
+   29.1
+  ],
+  "balanced": [
+   -12.6,
+   28.3
+  ]
+ },
+ "colormap": "inferno",
+ "no_data_colour": "#0e0e10",
+ "valid_fraction": 0.975,
+ "balancing": "balanced: each later pass shifted by its median difference vs. the mosaic in their overlap; raw: unadjusted Landsat values",
+ "passes_used": [
+  {
+   "date": "2024-12-14",
+   "added_fraction": 0.462,
+   "balance_offset_c": 0.0,
+   "scenes": [
+    "LC09_L2SP_137040_20241214_02_T1",
+    "LC09_L2SP_137039_20241214_02_T1"
+   ]
+  },
+  {
+   "date": "2024-12-13",
+   "added_fraction": 0.376,
+   "balance_offset_c": -2.22,
+   "scenes": [
+    "LC08_L2SP_138040_20241213_02_T1",
+    "LC08_L2SP_138039_20241213_02_T1"
+   ]
+  },
+  {
+   "date": "2024-12-15",
+   "added_fraction": 0.037,
+   "balance_offset_c": -0.08,
+   "scenes": [
+    "LC08_L2SP_136040_20241215_02_T1",
+    "LC08_L2SP_136039_20241215_02_T1"
+   ]
+  },
+  {
+   "date": "2024-12-12",
+   "added_fraction": 0.092,
+   "balance_offset_c": -2.92,
+   "scenes": [
+    "LC09_L2SP_139040_20241212_02_T1",
+    "LC09_L2SP_139039_20241212_02_T1"
+   ]
+  },
+  {
+   "date": "2024-12-06",
+   "added_fraction": 0.008,
+   "balance_offset_c": -1.84,
+   "scenes": [
+    "LC08_L2SP_137040_20241206_02_T1",
+    "LC08_L2SP_137039_20241206_02_T1"
+   ]
+  }
+ ],
+ "passes_rejected": []
+}

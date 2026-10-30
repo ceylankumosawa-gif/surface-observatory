@@ -1,0 +1,103 @@
+{
+ "area": "Boulder and Table Mountain",
+ "crs": "EPSG:32613",
+ "pixel_m": 100,
+ "size_px": [
+  3840,
+  2160
+ ],
+ "extent_m": [
+  287500.0,
+  4330900.0,
+  671500.0,
+  4546900.0
+ ],
+ "primary_date": "2023-06-25",
+ "colour_scale_c": {
+  "raw": [
+   15.9,
+   49.0
+  ],
+  "balanced": [
+   17.4,
+   48.2
+  ]
+ },
+ "colormap": "inferno",
+ "no_data_colour": "#0e0e10",
+ "valid_fraction": 0.983,
+ "balancing": "balanced: each later pass shifted by its median difference vs. the mosaic in their overlap; raw: unadjusted Landsat values",
+ "passes_used": [
+  {
+   "date": "2023-06-25",
+   "added_fraction": 0.474,
+   "balance_offset_c": 0.0,
+   "scenes": [
+    "LC08_L2SP_034033_20230625_02_T1",
+    "LC08_L2SP_034032_20230625_02_T1",
+    "LC08_L2SP_034031_20230625_02_T1"
+   ]
+  },
+  {
+   "date": "2023-06-24",
+   "added_fraction": 0.107,
+   "balance_offset_c": 4.67,
+   "scenes": [
+    "LC09_L2SP_035033_20230624_02_T1",
+    "LC09_L2SP_035032_20230624_02_T1",
+    "LC09_L2SP_035031_20230624_02_T1"
+   ]
+  },
+  {
+   "date": "2023-06-26",
+   "added_fraction": 0.283,
+   "balance_offset_c": -2.49,
+   "scenes": [
+    "LC09_L2SP_033033_20230626_02_T1",
+    "LC09_L2SP_033032_20230626_02_T1",
+    "LC09_L2SP_033031_20230626_02_T1"
+   ]
+  },
+  {
+   "date": "2023-06-27",
+   "added_fraction": 0.08,
+   "balance_offset_c": -3.47,
+   "scenes": [
+    "LC08_L2SP_032033_20230627_02_T1",
+    "LC08_L2SP_032032_20230627_02_T1",
+    "LC08_L2SP_032031_20230627_02_T1"
+   ]
+  },
+  {
+   "date": "2023-06-18",
+   "added_fraction": 0.021,
+   "balance_offset_c": 4.62,
+   "scenes": [
+    "LC08_L2SP_033033_20230618_02_T1",
+    "LC08_L2SP_033032_20230618_02_T1",
+    "LC08_L2SP_033031_20230618_02_T1"
+   ]
+  },
+  {
+   "date": "2023-07-02",
+   "added_fraction": 0.006,
+   "balance_offset_c": 1.34,
+   "scenes": [
+    "LC08_L2SP_035033_20230702_02_T1",
+    "LC08_L2SP_035032_20230702_02_T1",
+    "LC08_L2SP_035031_20230702_02_T1"
+   ]
+  },
+  {
+   "date": "2023-07-03",
+   "added_fraction": 0.011,
+   "balance_offset_c": -1.76,
+   "scenes": [
+    "LC09_L2SP_034033_20230703_02_T1",
+    "LC09_L2SP_034032_20230703_02_T1",
+    "LC09_L2SP_034031_20230703_02_T1"
+   ]
+  }
+ ],
+ "passes_rejected": []
+}

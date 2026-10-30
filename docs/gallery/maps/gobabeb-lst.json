@@ -1,0 +1,71 @@
+{
+ "area": "Gobabeb and Namib gravel plains",
+ "crs": "EPSG:32733",
+ "pixel_m": 100,
+ "size_px": [
+  3840,
+  2160
+ ],
+ "extent_m": [
+  313600.0,
+  7287600.0,
+  697600.0,
+  7503600.0
+ ],
+ "primary_date": "2022-12-07",
+ "colour_scale_c": {
+  "raw": [
+   14.1,
+   58.6
+  ],
+  "balanced": [
+   11.8,
+   58.3
+  ]
+ },
+ "colormap": "inferno",
+ "no_data_colour": "#0e0e10",
+ "valid_fraction": 0.794,
+ "balancing": "balanced: each later pass shifted by its median difference vs. the mosaic in their overlap; raw: unadjusted Landsat values",
+ "passes_used": [
+  {
+   "date": "2022-12-07",
+   "added_fraction": 0.465,
+   "balance_offset_c": 0.0,
+   "scenes": [
+    "LC08_L2SP_179077_20221207_02_T1",
+    "LC08_L2SP_179076_20221207_02_T1",
+    "LC08_L2SP_179075_20221207_02_T1"
+   ]
+  },
+  {
+   "date": "2022-12-06",
+   "added_fraction": 0.078,
+   "balance_offset_c": 1.18,
+   "scenes": [
+    "LC09_L2SP_180076_20221206_02_T1",
+    "LC09_L2SP_180075_20221206_02_T1"
+   ]
+  },
+  {
+   "date": "2022-12-08",
+   "added_fraction": 0.218,
+   "balance_offset_c": -0.6,
+   "scenes": [
+    "LC09_L2SP_178077_20221208_02_T1",
+    "LC09_L2SP_178076_20221208_02_T1"
+   ]
+  },
+  {
+   "date": "2022-11-29",
+   "added_fraction": 0.033,
+   "balance_offset_c": -4.54,
+   "scenes": [
+    "LC09_L2SP_179077_20221129_02_T1",
+    "LC09_L2SP_179076_20221129_02_T1",
+    "LC09_L2SP_179075_20221129_02_T1"
+   ]
+  }
+ ],
+ "passes_rejected": []
+}

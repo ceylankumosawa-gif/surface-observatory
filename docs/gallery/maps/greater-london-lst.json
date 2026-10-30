@@ -1,0 +1,72 @@
+{
+ "area": "Greater London and rural fringe",
+ "crs": "EPSG:27700",
+ "pixel_m": 100,
+ "size_px": [
+  3840,
+  2160
+ ],
+ "extent_m": [
+  340800.0,
+  70400.0,
+  724800.0,
+  286400.0
+ ],
+ "primary_date": "2022-08-11",
+ "colour_scale_c": {
+  "raw": [
+   18.7,
+   44.7
+  ],
+  "balanced": [
+   18.9,
+   45.8
+  ]
+ },
+ "colormap": "inferno",
+ "no_data_colour": "#0e0e10",
+ "valid_fraction": 0.985,
+ "balancing": "balanced: each later pass shifted by its median difference vs. the mosaic in their overlap; raw: unadjusted Landsat values",
+ "passes_used": [
+  {
+   "date": "2022-08-11",
+   "added_fraction": 0.416,
+   "balance_offset_c": 0.0,
+   "scenes": [
+    "LC08_L2SP_201024_20220811_02_T1",
+    "LC08_L2SP_201023_20220811_02_T1"
+   ]
+  },
+  {
+   "date": "2022-08-10",
+   "added_fraction": 0.326,
+   "balance_offset_c": 2.53,
+   "scenes": [
+    "LC09_L2SP_202025_20220810_02_T1",
+    "LC09_L2SP_202024_20220810_02_T1",
+    "LC09_L2SP_202023_20220810_02_T1"
+   ]
+  },
+  {
+   "date": "2022-08-12",
+   "added_fraction": 0.193,
+   "balance_offset_c": 0.18,
+   "scenes": [
+    "LC09_L2SP_200025_20220812_02_T1",
+    "LC09_L2SP_200024_20220812_02_T1",
+    "LC09_L2SP_200023_20220812_02_T1"
+   ]
+  },
+  {
+   "date": "2022-08-09",
+   "added_fraction": 0.051,
+   "balance_offset_c": 3.2,
+   "scenes": [
+    "LC08_L2SP_203025_20220809_02_T1",
+    "LC08_L2SP_203024_20220809_02_T1",
+    "LC08_L2SP_203023_20220809_02_T1"
+   ]
+  }
+ ],
+ "passes_rejected": []
+}
